@@ -1,26 +1,31 @@
-import { FaGithub, FaFacebook, FaInstagram, FaSpotify } from "react-icons/fa"
+import { FaGithub, FaFacebook, FaInstagram, FaLinkedin, FaEnvelope  } from "react-icons/fa"
 
 const socialLinks = [
         {
             name: "GitHub",
-            href: "https://github.com/your-username",
+            href: "https://github.com/sumagangjoren",
             icon: <FaGithub />
         },
         {
             name: "Facebook",
-            href: "https://facebook.com/your-profile",
+            href: "https://www.facebook.com/sumagangjoren",
             icon: <FaFacebook />
         },
         {
             name: "Instagram",
-            href: "https://instagram.com/your-profile",
+            href: "https://www.instagram.com/sumagangjoren",
             icon: <FaInstagram />
         },
         {
-            name: "Spotify",
-            href: "https://open.spotify.com/user/your-profile",
-            icon: <FaSpotify />
+            name: "LinkedIn",
+            href: "https://www.linkedin.com/in/sumagangjoren/",
+            icon: <FaLinkedin />
         },
+         {
+        name: "Email",
+        href: "mailto:sumagangjoren@gmail.com",
+        icon: <FaEnvelope />
+    },
     ]
 
 const SocialButtons = () => {

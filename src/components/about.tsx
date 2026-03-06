@@ -18,31 +18,39 @@ const skills = [
 const About = () => {
     return (
         <section id="about" className="min-h-1/2 mx-auto  w-full justify-between py-20 items-center">
-            <div className="grid grid-cols-12 gap-20">
-                <div className="col-span-6 col span-full md:col-span-6 space-y-6">
-                    <h2 className="text-xl ">A bit about me</h2>
-                    <div className="space-y-4 ">
+            <div className="grid gap-16 md:grid-cols-2">
+
+                {/* Left */}
+                <div className="space-y-6">
+                    <h2 className="text-xl">A bit about me</h2>
+
+                    <div className="space-y-4 text-slate-400 leading-relaxed">
                         <p>
                             I have always been fascinated by the power of the internet and how it can connect people and ideas from all over the world.
                         </p>
+
                         <p>
-                            I believe that successful web development is all about collaboration and communication. I work closely with my clients to understand their needs and preferences, and I am always open to feedback and suggestions.
+                            I believe that successful web development is all about collaboration and communication. I work closely with clients to understand their needs and preferences.
                         </p>
+
                         <p>
-                            I am passionate about learning new technologies and staying up-to-date with the latest trends in web development. I am always looking for ways to improve my skills and deliver better results for my clients.
+                            I am passionate about learning new technologies and staying up-to-date with the latest trends in web development.
                         </p>
                     </div>
                 </div>
-                <div className="col-span-6 space-y-6">
+
+                {/* Right */}
+                <div className="space-y-6">
                     <h2 className="text-xl">Some of the tools I use</h2>
-                    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-8">
+
+                    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 gap-8">
                         {skills.map((skill) => {
                             const Icon = skill.icon
 
                             return (
                                 <div
                                     key={skill.name}
-                                    className="flex flex-col items-center gap-2 text-slate-300 hover:text-green-300 transition"
+                                    className="flex flex-col items-center gap-2 text-slate-400 hover:text-green-300 transition"
                                 >
                                     <Icon className="text-4xl" />
                                     <span className="text-sm">{skill.name}</span>
@@ -51,6 +59,7 @@ const About = () => {
                         })}
                     </div>
                 </div>
+
             </div>
         </section>
     )
