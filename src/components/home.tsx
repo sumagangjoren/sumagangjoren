@@ -11,7 +11,7 @@ const Home = () => {
                     Joren Sumagang
                 </h1>
 
-                <div className="py-10">
+                <div className="py-10 text-slate-300">
                     👋 Hello and welcome to my web developer portfolio.
                     I am a passionate web developer with a strong background in creating dynamic and responsive websites.
                     With expertise in HTML, CSS, JavaScript, and various frameworks,

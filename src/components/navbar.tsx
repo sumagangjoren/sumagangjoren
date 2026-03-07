@@ -29,7 +29,7 @@ const Navbar = () => {
         )
         sections.forEach((section) => observer.observe(section))
 
-         const handleScroll = () => {
+        const handleScroll = () => {
             setScrolled(window.scrollY > 10)
         }
 
@@ -43,17 +43,17 @@ const Navbar = () => {
     }, [])
 
     return (
-       <header
-    className={`sticky top-0 z-50 border-b transition-all duration-300
-    ${scrolled
-        ? "border-white/10 bg-[#0b0f14]/80 backdrop-blur-md"
-        : "border-transparent bg-transparent"}
-    `}
->
+        <header
+            className={`sticky top-0 z-50 border-b transition-all duration-300 px-10 sm:px-10 md:px-10
+            ${scrolled
+                            ? "border-white/10 bg-[#0b0f14]/80 backdrop-blur-md"
+                            : "border-transparent bg-transparent"}
+            `}
+        >
             <nav className="mx-auto flex h-20 w-full max-w-6xl items-center justify-between">
                 <a
                     href="#home"
-                    className="text-2xl font-medium tracking-wide text-white transition hover:text-green-300"
+                    className="text-2xl font-medium tracking-wide text-white transition hover:text-green-500"
                 >
                     JOREN
                 </a>
@@ -63,18 +63,17 @@ const Navbar = () => {
                         links.map((link) => {
                             const sectionId = link.href.replace("#", "")
                             return (
-                            <li key={link.href}>
-                                <a
-                                href={link.href}
-                                className={`transition uppercase ${
-                                    activeSection === sectionId
-                                    ? "text-green-300"
-                                    : "text-slate-200 hover:text-green-300"
-                                }`}
-                                >
-                                {link.label}
-                                </a>
-                            </li>
+                                <li key={link.href}>
+                                    <a
+                                        href={link.href}
+                                        className={`transition uppercase ${activeSection === sectionId
+                                                ? "text-green-500"
+                                                : "text-slate-200 hover:text-green-500"
+                                            }`}
+                                    >
+                                        {link.label}
+                                    </a>
+                                </li>
                             )
                         })
                     }
@@ -113,7 +112,7 @@ const Navbar = () => {
                             <a
                                 key={link.href}
                                 href={link.href}
-                                className="px-6 py-4 text-slate-200 transition hover:text-green-300 text-end"
+                                className="px-6 py-4 text-slate-200 transition hover:text-green-500 text-end"
                             >
                                 {link.label}
                             </a>

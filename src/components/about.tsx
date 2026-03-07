@@ -1,18 +1,27 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaGithub, FaFigma, FaVuejs, FaLaravel } from "react-icons/fa"
-import { SiTypescript, SiTailwindcss } from "react-icons/si"
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaGithub, FaFigma, FaVuejs, FaLaravel, FaBootstrap, FaPhp, FaCode, FaServer, FaWordpress } from "react-icons/fa"
+import { SiTypescript, SiTailwindcss, SiMysql, SiVuetify, SiSupabase, SiPinia } from "react-icons/si"
 
 const skills = [
     { name: "HTML", icon: FaHtml5 },
     { name: "CSS", icon: FaCss3Alt },
-    { name: "JavaScript", icon: FaJs },
-    { name: "React", icon: FaReact },
-    { name: "Vue.js", icon: FaVuejs },
-    { name: "TypeScript", icon: SiTypescript },
+    { name: "Bootstrap", icon: FaBootstrap },
+    { name: "PHP", icon: FaPhp },
     { name: "Laravel", icon: FaLaravel },
+    { name: "JavaScript", icon: FaJs },
+    { name: "Vue", icon: FaVuejs },
+    { name: "Vuetify", icon: SiVuetify },
+    { name: "Pinia", icon: SiPinia },
+    { name: "React", icon: FaReact },
+    { name: "TypeScript", icon: SiTypescript },
     { name: "Tailwind", icon: SiTailwindcss },
+    { name: "MySQL", icon: SiMysql },
+    { name: "Supabase", icon: SiSupabase },
     { name: "Git", icon: FaGitAlt },
     { name: "GitHub", icon: FaGithub },
-    { name: "Figma", icon: FaFigma }
+    { name: "Figma", icon: FaFigma },
+    { name: "WordPress", icon: FaWordpress },
+    { name: "MVC Pattern", icon: FaCode },
+    { name: "RESTful API", icon: FaServer },
 ]
 
 const About = () => {
@@ -24,7 +33,7 @@ const About = () => {
                 <div className="space-y-6">
                     <h2 className="text-xl">A bit about me</h2>
 
-                    <div className="space-y-4 text-slate-400 leading-relaxed">
+                    <div className="space-y-4 text-slate-300 leading-relaxed">
                         <p>
                             I have always been fascinated by the power of the internet and how it can connect people and ideas from all over the world.
                         </p>
@@ -50,10 +59,10 @@ const About = () => {
                             return (
                                 <div
                                     key={skill.name}
-                                    className="flex flex-col items-center gap-2 text-slate-400 hover:text-green-300 transition"
+                                    className="flex flex-col items-center gap-2 text-slate-300 hover:text-green-500 transition"
                                 >
                                     <Icon className="text-4xl" />
-                                    <span className="text-sm">{skill.name}</span>
+                                    <span className="text-sm text-center">{skill.name}</span>
                                 </div>
                             )
                         })}

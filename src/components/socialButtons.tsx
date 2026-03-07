@@ -1,4 +1,7 @@
 import { FaGithub, FaFacebook, FaInstagram, FaLinkedin, FaEnvelope  } from "react-icons/fa"
+interface Props {
+    className?: string
+}
 
 const socialLinks = [
         {
@@ -28,9 +31,9 @@ const socialLinks = [
     },
     ]
 
-const SocialButtons = () => {
+const SocialButtons = ({className} : Props) => {
   return (
-    <div className="flex items-center gap-3 justify-center">
+    <div className={`flex items-center gap-3 justify-center ${className}`}>
         {socialLinks.map((social) => (
             <a
                 key={social.name}
