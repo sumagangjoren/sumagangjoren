@@ -29,5 +29,4 @@ Feel free to explore my repositories for more React-powered projects!
 |-----|------|------|
 <div align="center">
   <img src="http://github-readme-stats.vercel.app/api?username=sumagangjoren&show_icons=true&theme=dracula"  style="max-height: 15rem;"/>
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=sumagangjoren&theme=dracula&utcOffset=8" style="max-height: 15rem" />
 </div>
